@@ -1,0 +1,81 @@
+"""
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Verify Your Email - FxUtopia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        background: #2563eb;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+        background: #f9f9f9;
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Welcome to FxUtopia!</h1>
+      </div>
+      <div class="content">
+        <h2>Verify Your Email Address</h2>
+        <p>
+          Thank you for joining FxUtopia, the premier Forex & Crypto trading
+          community!
+        </p>
+        <p>
+          To complete your registration and start accessing our educational
+          content, marketplace, and community features, please verify your email
+          address by clicking the button below:
+        </p>
+        <p style="text-align: center; margin: 30px 0">
+          <a href="{{ verification_link }}" class="button"
+            >Verify Email Address</a
+          >
+        </p>
+        <p>
+          If the button doesn't work, you can copy and paste this link into your
+          browser:
+        </p>
+        <p style="word-break: break-all">{{ verification_link }}</p>
+        <p>This verification link will expire in 24 hours.</p>
+      </div>
+      <div class="footer">
+        <p>© 2025 FxUtopia. All rights reserved.</p>
+        <p>
+          If you didn't create an account with us, please ignore this email.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+"""
