@@ -17,3 +17,4 @@ celery==5.3.4
 python-socketio==5.10.0
 pydantic[email]==2.5.0
 pydantic-settings==2.1.0
+asyncpg==0.30.0

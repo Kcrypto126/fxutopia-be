@@ -7,6 +7,8 @@ from alembic import context
 from app.database import Base
 from app.config import get_settings
 
+from app.models import *
+
 settings = get_settings()
 
 config = context.config
