@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
-from ...database import get_db
-from ...models.user import User
-from ...models.marketplace import ProductCategory, ProductStatus
-from ...core.deps import get_current_active_user, get_current_admin_user
-from ...services.marketplace_service import MarketplaceService
+from app.database import get_db
+from app.models.user import User
+from app.models.marketplace import ProductCategory, ProductStatus
+from app.core.deps import get_current_active_user, get_current_admin_user
+from app.services.marketplace_service import MarketplaceService
 
 router = APIRouter()
 

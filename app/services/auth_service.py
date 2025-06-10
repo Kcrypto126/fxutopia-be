@@ -5,10 +5,10 @@ from typing import Optional
 from jose import JWTError, jwt
 import secrets
 
-from ..models.user import User, UserSession, UserRole
-from ..schemas.user import UserCreate
-from ..core.security import verify_password, get_password_hash
-from ..config import get_settings
+from app.models.user import User, UserSession, UserRole
+from app.schemas.user import UserCreate
+from app.core.security import verify_password, get_password_hash
+from app.config import get_settings
 
 settings = get_settings()
 

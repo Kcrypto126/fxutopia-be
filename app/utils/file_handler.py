@@ -4,7 +4,7 @@ import aiofiles
 from PIL import Image
 from fastapi import UploadFile, HTTPException
 from typing import List, Optional
-from ..config import get_settings
+from app.config import get_settings
 
 settings = get_settings()
 

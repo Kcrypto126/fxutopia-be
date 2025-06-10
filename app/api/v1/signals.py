@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
-from ...database import get_db
-from ...models.user import User
-from ...models.signals import SignalType, SignalStatus
-from ...core.deps import get_current_active_user
-from ...services.signal_service import SignalService
+from app.database import get_db
+from app.models.user import User
+from app.models.signals import SignalType, SignalStatus
+from app.core.deps import get_current_active_user
+from app.services.signal_service import SignalService
 
 router = APIRouter()
 

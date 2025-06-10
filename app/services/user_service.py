@@ -4,9 +4,9 @@ from typing import List, Optional
 import os
 import uuid
 
-from ..models.user import User
-from ..schemas.user import UserUpdate
-from ..config import get_settings
+from app.models.user import User
+from app.schemas.user import UserUpdate
+from app.config import get_settings
 
 settings = get_settings()
 

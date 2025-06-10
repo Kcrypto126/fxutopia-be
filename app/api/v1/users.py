@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List
 
-from ...database import get_db
-from ...schemas.user import UserInDB, UserUpdate, UserPublic
-from ...models.user import User
-from ...core.deps import get_current_active_user, get_current_admin_user
-from ...services.user_service import UserService
+from app.database import get_db
+from app.schemas.user import UserInDB, UserUpdate, UserPublic
+from app.models.user import User
+from app.core.deps import get_current_active_user, get_current_admin_user
+from app.services.user_service import UserService
 
 router = APIRouter()
 

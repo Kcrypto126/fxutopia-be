@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, desc
 from typing import List, Optional
 
-from ..models.signals import (
+from app.models.signals import (
     Signal, SignalProvider, SignalSubscription,
     SignalType, SignalStatus
 )

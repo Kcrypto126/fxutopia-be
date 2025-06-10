@@ -2,12 +2,12 @@ from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
-from ...database import get_db
-from ...schemas.community import PostCreate, PostUpdate, Post, CommentCreate, CommentUpdate, Comment
-from ...models.community import PostCategory
-from ...models.user import User
-from ...core.deps import get_current_active_user, get_current_admin_user
-from ...services.community_service import CommunityService
+from app.database import get_db
+from app.schemas.community import PostCreate, PostUpdate, Post, CommentCreate, CommentUpdate, Comment
+from app.models.community import PostCategory
+from app.models.user import User
+from app.core.deps import get_current_active_user, get_current_admin_user
+from app.services.community_service import CommunityService
 
 router = APIRouter()
 

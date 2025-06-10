@@ -4,12 +4,12 @@ from sqlalchemy.orm import Session
 from datetime import timedelta
 from typing import Any
 
-from ...database import get_db
-from ...schemas.user import UserCreate, UserInDB, Token, Login, RefreshToken
-from ...services.auth_service import AuthService
-from ...services.email_service import EmailService
-from ...core.security import create_access_token
-from ...config import get_settings
+from app.database import get_db
+from app.schemas.user import UserCreate, UserInDB, Token, Login, RefreshToken
+from app.services.auth_service import AuthService
+from app.services.email_service import EmailService
+from app.core.security import create_access_token
+from app.config import get_settings
 
 settings = get_settings()
 router = APIRouter()

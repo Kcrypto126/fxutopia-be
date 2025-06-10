@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 from typing import List, Optional
 
-from ..models.marketplace import (
+from app.models.marketplace import (
     MarketplaceProduct, ProductPurchase, ProductReview,
     ProductCategory, ProductStatus
 )

@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional, List
 from datetime import datetime
-from ..models.community import PostCategory
+from app.models.community import PostCategory
 
 class PostBase(BaseModel):
     title: str

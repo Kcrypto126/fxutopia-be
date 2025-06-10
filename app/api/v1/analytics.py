@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from ...database import get_db
-from ...models.user import User
-from ...core.deps import get_current_admin_user
-from ...utils.analytics import AnalyticsService
+from app.database import get_db
+from app.models.user import User
+from app.core.deps import get_current_admin_user
+from app.utils.analytics import AnalyticsService
 
 router = APIRouter()
 

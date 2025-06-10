@@ -2,10 +2,10 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func, desc, and_
 from datetime import datetime, timedelta
 from typing import Dict, List, Any
-from ..models.user import User
-from ..models.community import Post, Comment
-from ..models.education import EducationalContent
-from ..models.marketplace import MarketplaceProduct, ProductPurchase
+from app.models.user import User
+from app.models.community import Post, Comment
+from app.models.education import EducationalContent
+from app.models.marketplace import MarketplaceProduct, ProductPurchase
 
 class AnalyticsService:
     def __init__(self, db: Session):

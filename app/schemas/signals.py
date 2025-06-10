@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional
 from datetime import datetime
-from ..models.signals import SignalType, SignalStatus
+from app.models.signals import SignalType, SignalStatus
 
 class SignalBase(BaseModel):
     symbol: str

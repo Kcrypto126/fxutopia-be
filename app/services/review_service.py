@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 from typing import List, Optional
 
-from ..models.reviews import Review, ReviewHelpfulVote, ReviewCategory
+from app.models.reviews import Review, ReviewHelpfulVote, ReviewCategory
 
 class ReviewService:
     def __init__(self, db: Session):

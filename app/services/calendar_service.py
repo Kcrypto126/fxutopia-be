@@ -3,7 +3,7 @@ from sqlalchemy import and_, between
 from typing import List, Optional
 from datetime import datetime, date
 
-from ..models.calendar import EconomicEvent, EventImpact
+from app.models.calendar import EconomicEvent, EventImpact
 
 class CalendarService:
     def __init__(self, db: Session):

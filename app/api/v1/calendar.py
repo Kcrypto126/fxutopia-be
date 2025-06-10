@@ -3,11 +3,11 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import datetime, date
 
-from ...database import get_db
-from ...models.user import User
-from ...models.calendar import EventImpact
-from ...core.deps import get_current_admin_user
-from ...services.calendar_service import CalendarService
+from app.database import get_db
+from app.models.user import User
+from app.models.calendar import EventImpact
+from app.core.deps import get_current_admin_user
+from app.services.calendar_service import CalendarService
 
 router = APIRouter()
 

@@ -2,9 +2,9 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 from typing import List, Optional
 
-from ..models.community import Post, Comment, PostLike, CommentLike, PostCategory
-from ..models.user import User
-from ..schemas.community import PostCreate, PostUpdate, CommentCreate, CommentUpdate
+from app.models.community import Post, Comment, PostLike, CommentLike, PostCategory
+from app.models.user import User
+from app.schemas.community import PostCreate, PostUpdate, CommentCreate, CommentUpdate
 
 class CommunityService:
     def __init__(self, db: Session):

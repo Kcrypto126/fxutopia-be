@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
-from ...database import get_db
-from ...models.user import User
-from ...models.education import ContentType, DifficultyLevel
-from ...core.deps import get_current_active_user, get_current_admin_user
-from ...services.education_service import EducationService
+from app.database import get_db
+from app.models.user import User
+from app.models.education import ContentType, DifficultyLevel
+from app.core.deps import get_current_active_user, get_current_admin_user
+from app.services.education_service import EducationService
 
 router = APIRouter()
 

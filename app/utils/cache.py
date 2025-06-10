@@ -1,7 +1,7 @@
 import redis.asyncio as redis
 import json
 from typing import Any, Optional
-from ..config import get_settings
+from app.config import get_settings
 
 settings = get_settings()
 

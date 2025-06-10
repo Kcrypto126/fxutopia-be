@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import Optional
 import json
 
-from ...database import get_db
-from ...utils.websocket_manager import manager
-from ...services.auth_service import AuthService
+from app.database import get_db
+from app.utils.websocket_manager import manager
+from app.services.auth_service import AuthService
 
 router = APIRouter()
 

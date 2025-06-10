@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional, List
 from datetime import datetime
-from ..models.marketplace import ProductCategory, ProductStatus
+from app.models.marketplace import ProductCategory, ProductStatus
 
 class MarketplaceProductBase(BaseModel):
     title: str

@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional, List
 from datetime import datetime
-from ..models.education import ContentType, DifficultyLevel
+from app.models.education import ContentType, DifficultyLevel
 
 class EducationalContentBase(BaseModel):
     title: str

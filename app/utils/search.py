@@ -1,10 +1,10 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, and_, func, text
 from typing import List, Dict, Any, Optional
-from ..models.community import Post
-from ..models.education import EducationalContent
-from ..models.marketplace import MarketplaceProduct
-from ..models.reviews import Review
+from app.models.community import Post
+from app.models.education import EducationalContent
+from app.models.marketplace import MarketplaceProduct
+from app.models.reviews import Review
 
 class SearchService:
     def __init__(self, db: Session):

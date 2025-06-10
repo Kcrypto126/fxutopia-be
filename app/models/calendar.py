@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, Enum, JSON
 from sqlalchemy.sql import func
-from ..database import Base
+from app.database import Base
 import enum
 
 class EventImpact(str, enum.Enum):

@@ -5,7 +5,6 @@ from fastapi.exception_handlers import http_exception_handler
 from fastapi.exceptions import HTTPException
 from contextlib import asynccontextmanager
 import redis.asyncio as redis
-from sqlalchemy import create_engine
 
 from .config import get_settings
 from .database import engine, Base

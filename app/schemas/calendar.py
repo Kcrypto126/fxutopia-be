@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional, List
 from datetime import datetime
-from ..models.calendar import EventImpact
+from app.models.calendar import EventImpact
 
 class EconomicEventBase(BaseModel):
     title: str

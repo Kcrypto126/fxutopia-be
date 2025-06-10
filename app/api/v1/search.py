@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 from typing import Optional, List
 
-from ...database import get_db
-from ...utils.search import SearchService
+from app.database import get_db
+from app.utils.search import SearchService
 
 router = APIRouter()
 

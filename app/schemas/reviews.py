@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional, List, Dict
 from datetime import datetime
-from ..models.reviews import ReviewCategory
+from app.models.reviews import ReviewCategory
 
 class ReviewBase(BaseModel):
     title: str

@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 from typing import List, Optional
 
-from ..models.education import (
+from app.models.education import (
     EducationalContent, Course, CourseModule, CourseEnrollment, 
     UserProgress, ContentType, DifficultyLevel
 )
