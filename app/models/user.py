@@ -38,7 +38,8 @@ class User(Base):
     comments = relationship("Comment", back_populates="author")
     reviews = relationship("Review", back_populates="author")
     marketplace_products = relationship("MarketplaceProduct", back_populates="seller")
-    signal_subscriptions = relationship("SignalSubscription", back_populates="user")
+    signal_subscriptions = relationship("SignalSubscription", back_populates="user", foreign_keys="SignalSubscription.user_id")
+    provided_signals = relationship("SignalSubscription", foreign_keys="SignalSubscription.provider_id")
 
 class UserSession(Base):
     __tablename__ = "user_sessions"

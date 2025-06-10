@@ -1,7 +1,8 @@
 from pydantic import BaseModel, validator
-from typing import Optional, List
+from typing import Optional, List, ForwardRef
 from datetime import datetime
 from app.models.community import PostCategory
+from app.schemas.user import UserPublic
 
 class PostBase(BaseModel):
     title: str
@@ -36,7 +37,7 @@ class PostInDB(PostBase):
         from_attributes = True
 
 class Post(PostInDB):
-    author: "UserPublic"
+    author: UserPublic
     
     class Config:
         from_attributes = True
@@ -69,7 +70,7 @@ class CommentInDB(CommentBase):
         from_attributes = True
 
 class Comment(CommentInDB):
-    author: "UserPublic"
+    author: UserPublic
     replies: List["Comment"] = []
     
     class Config:

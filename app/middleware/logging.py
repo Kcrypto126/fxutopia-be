@@ -2,6 +2,7 @@ import logging
 import time
 from fastapi import Request
 from fastapi.responses import Response
+from starlette.middleware.base import BaseHTTPMiddleware
 
 # Configure logging
 logging.basicConfig(
@@ -15,8 +16,8 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-class LoggingMiddleware:
-    async def __call__(self, request: Request, call_next):
+class LoggingMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
         start_time = time.time()
         
         # Log request
